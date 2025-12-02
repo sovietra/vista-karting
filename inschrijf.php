@@ -32,7 +32,6 @@
 
 <body>
     <header id="header-div">
-        <?php require_once("includes/hamburg.inc.php"); ?>
     </header>
     <div>
         <div class="container">
@@ -73,10 +72,11 @@
                 <script src="functions.js"></script>
                 <script>
                 function gotomypage(page) {
-                    window.location.href = page + ".php";
+                    window.location.href = page + ".html";
                 }
                 </script>
 
 </body>
+
 
 </html>
