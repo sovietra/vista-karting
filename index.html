@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home pagina</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.php">
+</head>
+
+<body>
+    <header id="header-div">
+    </header>
+
+
+    <div class="container">
+        <h3>Vista Kartrace 2024<h3>
+                <hr>
+                <h5>Wil jij meedoen met het vetste kart evenement van dit jaar?</h5>
+                <h6>Schrijf je dan nu in!<h6>
+                        <br>
+                        <p></p>
+                        <button onclick="gotomypage('inschrijf');" class="button2">Schrijf je in!</button>
+    </div>
+
+    <div class="container2">
+        <h2> Een kart race, op Vista?<h2>
+                <hr>
+                <h5>Dit jaar organizeren wij een Kartrace op onze locatie in Heerlen. Deze zal alleen beschikbaar zijn
+                    voor onze eigen studenten.
+                    <br>
+                    <h5>Jullie zullen in poules van 4 tegen elkaar gaan racen en de winnaren van de poules zullen
+                        zichzelf omhoog werken richtig de finale om zo kampioen karting 2024 te worden!<h5>
+                            <br>
+                            <button onclick="gotomypage('home');" class="button3">meer informatie!</button>
+    </div>
+
+
+
+    <script src="functions.js"></script>
+    <script>
+    function gotomypage(page) {
+        window.location.href = page + ".php";
+    }
+    </script>
+</body>
+
+</html>
