@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --vistarood: rgb(229, 106, 84);
+  --vistagroen: #00555c;
+}
+
+body {
+  background-image: url("karting-nijverdal\ \(1\).png"); /* Fixed file path */
+  background-size: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--vistarood);
+  margin: 0;
+}
+
+/* Header styling */
+header {
+  background-color: var(--vistagroen);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+/* Hidden menu initially (collapsed) */
+#main-nav {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  text-align: left;
+  transition: max-height 0.3s ease-in-out;
+  flex-direction: column;
+  color: var(--vistarood);
+}
+
+/* Show the menu when the 'visible' class is added */
+#main-nav.visible {
+  max-height: 300px;
+}
+
+/* Menu items */
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+#main-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #main-nav {
+    width: 100%;
+  }
+}
+
+/* Styling for larger screens */
+@media (min-width: 769px) {
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: static;
+    width: auto;
+    max-height: none;
+  }
+
+  #main-nav ul {
+    display: flex;
+  }
+
+  #main-nav ul li {
+    padding: 0 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .poules-container {
+    padding: 20px;
+  }
+}
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 200px;
+    max-width: 80%;
+    height: 50x;
+    max-height: 100%;
+    background-color: rgb(65, 63, 65);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #000;
+    border: 1px solid black;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: var(--vistarood);
+    font-size: large;
+    background-color: var(--vistagroen);
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+
+/* Poules container styling */
+.poules-container {
+  display: flex;
+  align-content: center;
+  gap: 4vw;
+  background-color: var(--vistarood);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 85%;
+  margin-left: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: 450px;
+  left: 50px;
+}
+
+/* Poule card styling */
+.poule-card {
+  background-color: #00555c;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on poule cards */
+.poule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Poule title */
+.poule-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Poule description */
+.poule-card p {
+  margin-bottom: 15px;
+}
+
+/* Date and time styling */
+.poule-card .details {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.poule-card .details p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Team section */
+.poule-card .team {
+  margin-bottom: 20px;
+}
+
+/* Team container to hold team boxes */
+.team-container {
+  display: flex; /* Use flexbox to arrange team boxes horizontally */
+  justify-content: space-between; /* Space between team boxes */
+  margin-bottom: 20px;
+}
+
+/* Individual team box styling */
+.team-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 5px; /* Add margin for spacing */
+  flex: 1; /* Allow the boxes to grow equally */
+}
+
+.team-box strong {
+  display: block; /* Ensure the label is displayed as a block */
+}
+
+/* Team list styling */
+.team-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border-radius: 20px;
+  border-style: dotted;
+  border-width: 5px;
+}
+
+.team-box ul li {
+  background-color: var(--background-light);
+  color: var(--vistarood);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .poules-container {
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+}
+
+  .button3 {
+    background-color: var(--vistarood);
+    top: -50px;
+    border: none;
+    color: var(--vistagroen);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    left: 900px;
+  }

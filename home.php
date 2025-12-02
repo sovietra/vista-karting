@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informatie</title>
+    <link rel="stylesheet" href="info-pagina.css">
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</body>
+
+</head>
+
+
+
+
+</head>
+<p>
+</p>
+<div class="header">
+    <img src="images/VISTA_Logo_Liggend_wit_RGB.png" class="center">
+    <style>
+    img {
+        width: 50%;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
+    }
+    </style>
+
+</div>
+<section class="sec-1">
+    <h1 class="animate">Informatie</h1>
+    <p class="animate">In 2024 organizeren wij een kartrace op onze locatie Heerlen. <br />In deze organizatie kunnen
+        alleen de studenten van VISTA meedoen en tegen elkaar racen.<br /><br />In deze race zullen jullie met 4 poules
+        tegen elkaar moeten racen. <br />Om te winnen moeten jullie natuurlijk elkaar omhoog laten werken om zo de
+        kampioen van karting 2024 te worden!<br /></p>
+</section>
+
+<section class="sec-2">
+    <h1 class="animate">Waar?</h1>
+    <p class="animate">VISTA Karting is te bevinden op het grasveld naast het VISTA gebouw.
+</section>
+
+<section class="sec-3">
+    <h1 class="animate">Winnaar</h1>
+    <p class="animate">#1 Kan een week lang gratis bij de mees eten halen. <br />#2 Krijgt een cadeaubon van 20
+        euro.<br />
+        #3 Krijgt een cadeaubon van 10 euro.
+</section>
+
+<section class="sec-5">
+    <div class="images">
+        <img src="images/img.png" alt="" class="animate" style="--i:0;">
+        <img src="images/img2.png" alt="" class="animate" style="--i:1;">
+        <img src="images/img3.png" alt="" class="animate" style="--i:2;">
+    </div>
+    <button onclick="gotomypage('index');" class="btn">Home</button>
+</section>
+
+<script src="info-pagina.js"></script>
+<script>
+function gotomypage(page) {
+    window.location.href = page + ".php";
+}
+</script>
+
+</body>
+
+</html>
